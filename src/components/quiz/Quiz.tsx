@@ -48,7 +48,7 @@ export default function Quiz({ locale }: Props) {
 
   if (phase === "idle") {
     return (
-      <div className="bg-white rounded-xl shadow-md px-10 py-14 flex flex-col items-center gap-6 text-center">
+      <div className="bg-white rounded-xl shadow-md px-6 sm:px-10 py-10 sm:py-14 flex flex-col items-center gap-6 text-center">
         <p className="text-xs font-semibold tracking-[0.3em] uppercase text-[#297EB3]">
           {lang === "hr" ? "Provjeri znanje" : "Test your knowledge"}
         </p>
@@ -73,7 +73,7 @@ export default function Quiz({ locale }: Props) {
 
   if (phase === "finished") {
     return (
-      <div className="bg-white rounded-xl shadow-md px-10 py-14 flex flex-col items-center gap-6 text-center">
+      <div className="bg-white rounded-xl shadow-md px-6 sm:px-10 py-10 sm:py-14 flex flex-col items-center gap-6 text-center">
         <p className="text-xs font-semibold tracking-[0.3em] uppercase text-[#297EB3]">
           {lang === "hr" ? "Kviz završen" : "Quiz complete"}
         </p>

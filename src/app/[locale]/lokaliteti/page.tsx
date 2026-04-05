@@ -1,4 +1,3 @@
-import { getTranslations } from "next-intl/server";
 import { getLocale } from "next-intl/server";
 import Link from "next/link";
 import LightboxImage from "@/components/LightboxImage";
@@ -31,7 +30,6 @@ const TYPE_DESCRIPTIONS: Record<LocalityTypeKey, string> = {
 export { TYPE_NAMES };
 
 export default async function LocalitetiPage() {
-  const t = await getTranslations("localities");
   const locale = await getLocale();
 
   const typesInDb = await prisma.waterSource.findMany({
@@ -41,8 +39,8 @@ export default async function LocalitetiPage() {
   const activeTypes = new Set(typesInDb.map((r) => r.localityType));
 
   return (
-    <div className="px-60 py-7 space-y-8">
-      <div className="flex flex-row gap-14">
+    <div className="px-4 md:px-12 lg:px-60 py-7 space-y-8">
+      <div className="flex flex-col xl:flex-row gap-8 xl:gap-14">
 
         <div className="flex-1 space-y-4 text-base leading-7 text-gray-700 self-center text-justify">
           {TYPE_KEYS.map((key) => (
@@ -53,7 +51,7 @@ export default async function LocalitetiPage() {
           ))}
         </div>
 
-        <div className="w-130 self-center">
+        <div className="w-full xl:w-130 self-center mx-auto max-w-sm xl:max-w-none xl:mx-0">
           <LightboxImage
             src="/images/vrste lokaliteta info.png"
             alt="Vrste vodnih lokaliteta — dijagram"
@@ -65,7 +63,7 @@ export default async function LocalitetiPage() {
       </div>
 
       {/* Cards grid */}
-      <div className="grid grid-cols-5 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
         {TYPE_KEYS.map((key) => (
           <Link
             key={key}

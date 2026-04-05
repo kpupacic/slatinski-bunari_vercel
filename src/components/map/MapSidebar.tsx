@@ -34,7 +34,7 @@ export default function MapSidebar({ localityTypes, activeTypes, onChange, sourc
   }
 
   return (
-    <aside className="w-60 bg-white rounded-lg shadow-md flex flex-col gap-1 py-4 px-5 shrink-0 overflow-y-auto">
+    <aside className="w-full lg:w-60 max-h-60 lg:max-h-none bg-white rounded-lg shadow-md flex flex-col gap-1 py-4 px-5 shrink-0 overflow-y-auto">
       {/* Show all row */}
       <label className="flex items-center gap-3 cursor-pointer py-1 group">
         <span className={`w-5 h-5 rounded border-2 flex items-center justify-center shrink-0 transition-colors ${

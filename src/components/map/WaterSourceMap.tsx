@@ -106,9 +106,9 @@ export default function WaterSourceMap({ sources }: Props) {
   }, [markerRefs]);
 
   return (
-    <div className="flex px-60 py-7 gap-4" style={{ height: "calc(100vh - 168px)" }}>
-      {/* Map fills remaining space */}
-      <div className="relative flex-1 h-full">
+    <div className="flex flex-col lg:flex-row px-4 md:px-8 lg:px-12 xl:px-60 py-4 lg:py-7 gap-4 lg:h-[calc(100vh-168px)]">
+      {/* Map */}
+      <div className="relative h-[60vh] lg:flex-1 lg:h-full">
         <MapContainer center={MAP_CENTER} zoom={MAP_ZOOM} className="w-full h-full rounded-lg shadow-md">
           <TileLayer
             key={layer}
@@ -162,7 +162,7 @@ export default function WaterSourceMap({ sources }: Props) {
         </div>
       </div>
 
-      {/* Sidebar on the right */}
+      {/* Sidebar */}
       <MapSidebar
         localityTypes={localityTypes}
         activeTypes={activeTypes}

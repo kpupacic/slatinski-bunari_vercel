@@ -40,7 +40,7 @@ export default function QuestionCard({
   const canProceed = selected.length > 0;
 
   return (
-    <div className="bg-white rounded-xl shadow-md px-10 py-8 flex flex-col gap-6">
+    <div className="bg-white rounded-xl shadow-md px-5 sm:px-10 py-6 sm:py-8 flex flex-col gap-6">
       {/* Progress */}
       <div className="flex items-center gap-3">
         <div className="flex-1 h-1.5 bg-gray-200 rounded-full overflow-hidden">
