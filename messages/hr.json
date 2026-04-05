@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Po\u010detna",
+    "localities": "Lokaliteti",
+    "quiz": "Kviz",
+    "about": "O projektu"
+  },
+  "map": {
+    "showAll": "Prika\u017ei sve",
+    "showNone": "Sakrij sve",
+    "filterTitle": "Vrsta lokaliteta",
+    "depth": "Dubina",
+    "depthUnit": "m",
+    "satelliteView": "Satelit",
+    "streetView": "Karta",
+    "clarity": "Bistroća",
+    "na": "N/A",
+    "imagePlaceholder": "Slika",
+    "learnMore": "Saznaj više",
+    "type_bunari": "Bunari",
+    "type_skrapinski_bunari": "Škrapinski bunari",
+    "type_lokve": "Lokve",
+    "type_gustirne": "Gustirne",
+    "type_kamenice": "Kamenice"
+  },
+  "localities": {
+    "title": "Lokaliteti",
+    "depth": "Dubina",
+    "depthUnit": "m",
+    "clarity": "Bistroća",
+    "na": "N/A",
+    "description": "Opis",
+    "coordinates": "Koordinate",
+    "photos": "Fotografije",
+    "video": "Video",
+    "noVideo": "Nije dostupan video zapis.",
+    "noPhotos": "Fotografije još nisu dostupne.",
+    "imagePlaceholder": "Slika",
+    "backToAll": "\u2190 Svi lokaliteti"
+  },
+  "quiz": {
+    "title": "Kviz",
+    "start": "Zapo\u010dni kviz",
+    "next": "Sljede\u0107e pitanje",
+    "finish": "Zavr\u0161i",
+    "result": "Tvoj rezultat",
+    "score": "{correct} od {total} to\u010dnih odgovora",
+    "retake": "Poku\u0161aj ponovno"
+  },
+  "about": {
+    "title": "O projektu",
+    "subtitle": "Istra\u017eivanje i dokumentiranje vodnih izvora Slatina",
+    "introText": "Projekt \u201eSlatinski Bunari\u201c posve\u0107en je istra\u017eivanju, dokumentiranju i prezentaciji vodnih izvora u Slatinama na otoku \u010ciovu. Kroz spoj terenskoga rada, digitalne tehnologije i obrazovanja, \u017eelimo o\u010duvati znanje o tradicionalnim vodnim izvorima koji su stolje\u0107ima slu\u017eili lokalnoj zajednici.",
+    "introText2": "Ova web-stranica omogu\u0107uje posjetiteljima da istra\u017ee razli\u010dite tipove vodnih lokaliteta putem interaktivne karte, saznaju vi\u0161e o svakom izvoru te testiraju svoje znanje kroz edukativni kviz.",
+    "goalTitle": "Cilj projekta",
+    "goalText": "Cilj je podi\u0107i svijest o va\u017enosti tradicionalnih vodnih izvora, potaknuti njihovo o\u010duvanje te educirati mlade generacije o vodnom naslije\u0111u svoga kraja.",
+    "schoolTitle": "O\u0160 Slatine",
+    "schoolText": "Osnovna \u0161kola Slatine smje\u0161tena je u Slatinama na otoku \u010ciovu, u neposrednoj blizini Trogira. \u0160kola je aktivno uklju\u010dena u brojne projekte koji povezuju obrazovanje s lokalnom zajednicom i kulturnom ba\u0161tinom.",
+    "schoolText2": "U\u010denici i nastavnici O\u0160 Slatine nositelji su ovog projekta \u2014 od terenskog istra\u017eivanja i prikupljanja podataka o vodnim izvorima, do izrade fotografija i video zapisa koji dokumentiraju svaki lokalitet.",
+    "schoolAddress": "Put Lovreta 1, 21224 Slatine, \u010ciovo",
+    "stemTitle": "STEM femme junior projekt",
+    "stemSubtitle": "Aspiracije djevojaka k obrazovnim i profesionalnim putevima u STEM podru\u010dju - STeam",
+    "stemText": "Projekt \u201eSlatinski Bunari\u201c nastao je u sklopu STEM femme junior programa, inicijative koja poti\u010de sudjelovanje mladih, a posebno djevoj\u010dica, u STEM podru\u010djima. Program pru\u017ea mentorsku podr\u0161ku, resurse i okvir za razvoj istra\u017eiva\u010dkih projekata u \u0161kolama diljem Hrvatske.",
+    "stemText2": "STEM femme junior projekt vodi Institut za dru\u0161tvena istra\u017eivanja u Zagrebu, uz potporu partnera i sponzora koji omogu\u0107uju provedbu programa u lokalnim zajednicama.",
+    "sponsorsTitle": "Sponzori i partneri",
+    "sponsorsText": "Ovaj projekt ne bi bio mogu\u0107 bez podr\u0161ke na\u0161ih sponzora i partnera koji prepoznaju va\u017enost obrazovanja, o\u010duvanja kulturne ba\u0161tine i digitalne pismenosti.",
+    "partnerIDIZ": "Institut za dru\u0161tvena istra\u017eivanja",
+    "partnerCity": "Grad Split",
+    "partnerA1": "A1 Hrvatska"
+  }
+}

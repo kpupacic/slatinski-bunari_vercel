@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Home",
+    "localities": "Localities",
+    "quiz": "Quiz",
+    "about": "About"
+  },
+  "map": {
+    "showAll": "Show all",
+    "showNone": "Show none",
+    "filterTitle": "Locality type",
+    "depth": "Depth",
+    "depthUnit": "m",
+    "satelliteView": "Satellite",
+    "streetView": "Map",
+    "clarity": "Clarity",
+    "na": "N/A",
+    "imagePlaceholder": "Image",
+    "learnMore": "Learn more",
+    "type_bunari": "Wells",
+    "type_skrapinski_bunari": "Rock wells",
+    "type_lokve": "Ponds",
+    "type_gustirne": "Gustirne (Cisterns)",
+    "type_kamenice": "Stone basins"
+  },
+  "localities": {
+    "title": "Localities",
+    "depth": "Depth",
+    "depthUnit": "m",
+    "clarity": "Clarity",
+    "na": "N/A",
+    "description": "Description",
+    "coordinates": "Coordinates",
+    "photos": "Photos",
+    "video": "Video",
+    "noVideo": "No video available.",
+    "noPhotos": "Photos not yet available.",
+    "imagePlaceholder": "Image",
+    "backToAll": "← All localities"
+  },
+  "quiz": {
+    "title": "Quiz",
+    "start": "Start quiz",
+    "next": "Next question",
+    "finish": "Finish",
+    "result": "Your result",
+    "score": "{correct} out of {total} correct",
+    "retake": "Try again"
+  },
+  "about": {
+    "title": "About the project",
+    "subtitle": "Exploring and documenting the water sources of Slatine",
+    "introText": "The \"Slatinski Bunari\" project is dedicated to researching, documenting, and presenting the water sources in Slatine on the island of Čiovo. Through a combination of fieldwork, digital technology, and education, we aim to preserve knowledge about traditional water sources that have served the local community for centuries.",
+    "introText2": "This website allows visitors to explore different types of water localities through an interactive map, learn more about each source, and test their knowledge through an educational quiz.",
+    "goalTitle": "Project goal",
+    "goalText": "The goal is to raise awareness about the importance of traditional water sources, encourage their preservation, and educate younger generations about the water heritage of their region.",
+    "schoolTitle": "Slatine Elementary School",
+    "schoolText": "Slatine Elementary School is located in Slatine on the island of Čiovo, near the city of Trogir. The school is actively involved in numerous projects that connect education with the local community and cultural heritage.",
+    "schoolText2": "Students and teachers of Slatine Elementary School are the driving force behind this project — from field research and data collection about water sources, to creating photographs and video recordings that document each locality.",
+    "schoolAddress": "Put Lovreta 1, 21224 Slatine, Čiovo",
+    "stemTitle": "STEM femme junior project",
+    "stemSubtitle": "Girls' aspirations towards educational and professional pathways in STEM - STeam",
+    "stemText": "The \"Slatinski Bunari\" project was created as part of the STEM femme junior program, an initiative that encourages the participation of young people, especially girls, in STEM fields. The program provides mentorship support, resources, and a framework for developing research projects in schools across Croatia.",
+    "stemText2": "The STEM femme junior project is led by the Institute for Social Research in Zagreb, with the support of partners and sponsors who enable the program's implementation in local communities.",
+    "sponsorsTitle": "Sponsors & partners",
+    "sponsorsText": "This project would not be possible without the support of our sponsors and partners who recognize the importance of education, cultural heritage preservation, and digital literacy.",
+    "partnerIDIZ": "Institute for Social Research in Zagreb",
+    "partnerCity": "City of Split",
+    "partnerA1": "A1 Croatia"
+  }
+}
