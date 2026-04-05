@@ -175,7 +175,7 @@ export default async function OProjektuPage() {
                 />
               </div>
               <span className="text-xs text-gray-400 group-hover:text-gray-600 transition-colors duration-300 max-w-[120px] text-center">
-                {sponsor.nameKey ? t(sponsor.nameKey) : sponsor.alt}
+                {t(sponsor.nameKey)}
               </span>
             </div>
           ))}
