@@ -8,11 +8,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "**.ucarecdn.com",
-      },
-      {
-        protocol: "https",
-        hostname: "**.ucarecd.net",
+        hostname: "res.cloudinary.com",
       },
     ],
   },
