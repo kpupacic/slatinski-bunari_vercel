@@ -20,7 +20,8 @@ model WaterSource {
   localityType     String
   depth            Float?
   clarity          String?
-  shortDescription String
+  shortDescription   String
+  shortDescriptionEn String?
   latitude         Float
   longitude        Float
   photos           String[]

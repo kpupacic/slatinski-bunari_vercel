@@ -126,14 +126,22 @@ export default function WaterSourceMap({ sources }: Props) {
               <Popup>
                 <strong className="block text-sm mb-1">{source.name}</strong>
                 <span className="block text-xs text-gray-600">
-                  {t("clarity")}: {t("na")}
+                  {t("clarity")}: {source.clarity ?? t("na")}
                 </span>
                 <span className="block text-xs text-gray-600">
-                  {t("depth")}: 0 {t("depthUnit")}
+                  {t("depth")}: {source.depth != null ? `${source.depth} ${t("depthUnit")}` : t("na")}
                 </span>
-                <div className="my-1.5 w-full h-16 bg-gray-200 rounded flex items-center justify-center">
-                  <span className="text-xs text-gray-400">{t("imagePlaceholder")}</span>
-                </div>
+                {source.photos[0] ? (
+                  <img
+                    src={source.photos[0]}
+                    alt={source.name}
+                    className="my-1.5 w-full h-16 object-cover rounded"
+                  />
+                ) : (
+                  <div className="my-1.5 w-full h-16 bg-gray-200 rounded flex items-center justify-center">
+                    <span className="text-xs text-gray-400">{t("imagePlaceholder")}</span>
+                  </div>
+                )}
                 <a
                   href={`/${locale}/lokaliteti/${source.localityType}`}
                   className="text-xs text-blue-600 hover:underline"

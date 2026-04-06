@@ -18,6 +18,7 @@ const LOCALITY_DROPDOWN = [
 
 export default function Navbar() {
   const t = useTranslations("nav");
+  const tLocalities = useTranslations("localities");
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
@@ -140,7 +141,7 @@ export default function Navbar() {
                         onMouseLeave={(e) => (e.currentTarget as HTMLElement).style.backgroundColor = "var(--color-nav-default)"}
                         className="block text-center py-3 text-xs font-bold tracking-[0.2em] uppercase text-white border-t transition-colors"
                       >
-                        {item.label}
+                        {tLocalities(`typeName_${item.key}` as never)}
                       </Link>
                     ))}
                   </div>
@@ -204,7 +205,7 @@ export default function Navbar() {
                     }}
                     className="block px-10 py-3 text-xs font-bold tracking-[0.15em] uppercase text-white/80 border-t"
                   >
-                    {item.label}
+                    {tLocalities(`typeName_${item.key}` as never)}
                   </Link>
                 ))}
               </div>

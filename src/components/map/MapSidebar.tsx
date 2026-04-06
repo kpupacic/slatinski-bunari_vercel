@@ -61,7 +61,7 @@ export default function MapSidebar({ localityTypes, activeTypes, onChange, sourc
 
         return (
           <div key={type}>
-            <div className="flex items-center gap-3 py-1 pl-2">
+            <div className="flex items-center gap-3 py-2 pl-2">
               <label className="flex items-center gap-3 cursor-pointer group flex-1">
                 <span className={`w-5 h-5 rounded border-2 flex items-center justify-center shrink-0 transition-colors ${
                   checked ? "border-blue-600 bg-blue-600" : "border-gray-400 group-hover:border-blue-400"

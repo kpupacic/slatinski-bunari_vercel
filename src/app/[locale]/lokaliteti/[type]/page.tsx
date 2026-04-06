@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
-import { TYPE_NAMES, type LocalityTypeKey } from "../page";
+import { type LocalityTypeKey } from "../page";
 
 function toEmbedUrl(url: string): string {
   const shortMatch = url.match(/youtu\.be\/([^?]+)/);
@@ -30,7 +30,7 @@ export default async function LocalityTypePage({ params }: Props) {
 
   if (sources.length === 0) notFound();
 
-  const typeName = TYPE_NAMES[type as LocalityTypeKey] ?? type;
+  const typeName = t(`typeName_${type as LocalityTypeKey}` as never) ?? type;
 
   return (
     <div className="px-4 md:px-12 lg:px-60 py-7">
@@ -100,7 +100,9 @@ export default async function LocalityTypePage({ params }: Props) {
                     {t("description")}
                   </h3>
                   <p className="text-sm leading-7 text-gray-700">
-                    {source.shortDescription}
+                    {locale === "en" && source.shortDescriptionEn
+                      ? source.shortDescriptionEn
+                      : source.shortDescription}
                   </p>
                 </div>
 

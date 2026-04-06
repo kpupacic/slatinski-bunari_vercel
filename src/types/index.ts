@@ -5,6 +5,7 @@ export interface WaterSource {
   depth: number | null;
   clarity: string | null;
   shortDescription: string;
+  shortDescriptionEn: string | null;
   latitude: number;
   longitude: number;
   photos: string[];
