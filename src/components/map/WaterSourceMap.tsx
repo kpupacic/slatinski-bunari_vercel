@@ -11,10 +11,11 @@ import MapSidebar from "./MapSidebar";
 // One color per locality type
 const LOCALITY_COLORS: Record<string, string> = {
   bunari:             "#2563eb", // blue
-  skrapinski_bunari:  "#16a34a", // green
+  skrapinski_bunari:  "#24E06A", // green
   lokve:              "#9333ea", // purple
   gustirne:           "#ea580c", // orange
   kamenice:           "#11ddee", // cyan
+  vrilo:              "#FF30C9", // pink
 };
 const DEFAULT_COLOR = "#ef4444"; // red
 

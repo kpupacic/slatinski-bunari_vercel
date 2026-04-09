@@ -14,6 +14,7 @@ const LOCALITY_DROPDOWN = [
   { key: "gustirne",          label: "Gustirne" },
   { key: "lokve",             label: "Lokve" },
   { key: "kamenice",          label: "Kamenice" },
+  { key: "vrilo",             label: "Vrilo" },
 ];
 
 export default function Navbar() {

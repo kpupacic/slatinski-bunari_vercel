@@ -21,7 +21,8 @@
     "type_skrapinski_bunari": "Škrapinski bunari",
     "type_lokve": "Lokve",
     "type_gustirne": "Gustirne",
-    "type_kamenice": "Kamenice"
+    "type_kamenice": "Kamenice",
+    "type_vrilo": "Vrilo"
   },
   "localities": {
     "title": "Lokaliteti",
@@ -42,11 +43,13 @@
     "typeName_gustirne": "Gustirne",
     "typeName_lokve": "Lokve",
     "typeName_kamenice": "Kamenice",
+    "typeName_vrilo": "Vrilo",
     "typeDescription_bunari": "<b>Bunari</b> su dublji i uski, strukturalno ojačani - obzidani iskopi okomitih stijenki te se voda za korištenje iz njih vadi pomoću posuda ili pumpi. Kako bi bila dostupna za piće životinjama na kontrolirani način, voda se pretače u kamenice ili korita u neposrednoj blizini. Bunari su ponekad i natkriveni, svođeni.",
     "typeDescription_skrapinski_bunari": "<b>Škraparski bunari</b> su potpuno prirodne krške tvorevine - udubine okomitih tj. strmih stijenki gdje je prirodnim procesom taloženja materijala dno postalo vodonepropusno i omogućilo akumulaciju vode.",
     "typeDescription_gustirne": "<b>Gustirne (cisterne, šterne, čatrnje) su udubine, šupljine</b> između prirodnih stijena nepravilnog oblika koje su ljudi dodatno uredili: vapnom ili drugim veznim mješavinama zabrtvili pukotine u svrhu vododrživosti, ponekad i natkrili tj. zatvorili. Kao i kod bunara, voda se iz njih vadi.",
     "typeDescription_lokve": "<b>Lokve</b> su šire i pliće udubine, barem dijelom položenih obala, vodne površine dostupne ljudima i životinjama direktnim pristupom.",
-    "typeDescription_kamenice": "<b>Kamenice</b> su male prirodne ili isklesane udubine u kamenu koje skupljaju kišnicu. Služile su kao izvor pitke vode za ljude i životinje na putovima i pašnjacima."
+    "typeDescription_kamenice": "<b>Kamenice</b> su male prirodne ili isklesane udubine u kamenu koje skupljaju kišnicu. Služile su kao izvor pitke vode za ljude i životinje na putovima i pašnjacima.",
+    "typeDescription_vrilo": "[vrilo tekst]"
   },
   "quiz": {
     "title": "Kviz",

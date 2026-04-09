@@ -3,7 +3,7 @@ import Link from "next/link";
 import LightboxImage from "@/components/LightboxImage";
 import { prisma } from "@/lib/prisma";
 
-const TYPE_KEYS = ["bunari", "skrapinski_bunari", "gustirne", "lokve", "kamenice"] as const;
+const TYPE_KEYS = ["bunari", "skrapinski_bunari", "gustirne", "lokve", "kamenice", "vrilo"] as const;
 export type LocalityTypeKey = (typeof TYPE_KEYS)[number];
 
 export default async function LocalitetiPage() {
@@ -41,7 +41,7 @@ export default async function LocalitetiPage() {
       </div>
 
       {/* Cards grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6">
         {TYPE_KEYS.map((key) => (
           <Link
             key={key}

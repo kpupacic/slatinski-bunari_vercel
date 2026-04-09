@@ -21,7 +21,8 @@
     "type_skrapinski_bunari": "Rock wells",
     "type_lokve": "Ponds",
     "type_gustirne": "Gustirne (Cisterns)",
-    "type_kamenice": "Stone basins"
+    "type_kamenice": "Stone basins",
+    "type_vrilo": "Water spring"
   },
   "localities": {
     "title": "Localities",
@@ -42,11 +43,13 @@
     "typeName_gustirne": "Cisterns",
     "typeName_lokve": "Ponds",
     "typeName_kamenice": "Stone basins",
+    "typeName_vrilo": "Water spring",
     "typeDescription_bunari": "<b>Wells</b> are deeper and narrow, structurally reinforced — stone-lined vertical excavations from which water is drawn using containers or pumps. To allow animals controlled access to drinking water, the water is transferred to stone basins or troughs nearby. Wells are sometimes covered or vaulted.",
     "typeDescription_skrapinski_bunari": "<b>Rock wells</b> are entirely natural karst formations — depressions with near-vertical or steep walls where natural sediment deposits have made the base watertight, enabling water accumulation.",
     "typeDescription_gustirne": "<b>Cisterns (gustirne, šterne, čatrnje) are cavities or hollows</b> between irregular natural rocks that people have adapted: sealing cracks with lime or other binding mixtures to retain water, sometimes also covering or enclosing them. As with wells, water is drawn from them.",
     "typeDescription_lokve": "<b>Ponds (lokve)</b> are wider and shallower depressions, at least partly with gently sloping banks, offering water surfaces directly accessible to people and animals.",
-    "typeDescription_kamenice": "<b>Stone basins (kamenice)</b> are small natural or carved hollows in rock that collect rainwater. They served as a source of drinking water for people and animals along paths and pastures."
+    "typeDescription_kamenice": "<b>Stone basins (kamenice)</b> are small natural or carved hollows in rock that collect rainwater. They served as a source of drinking water for people and animals along paths and pastures.",
+    "typeDescription_vrilo": "[water spring text]"
   },
   "quiz": {
     "title": "Quiz",
