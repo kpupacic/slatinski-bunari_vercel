@@ -108,7 +108,7 @@ export default async function LocalityTypePage({ params }: Props) {
 
                 {/* Photos + Video */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
-                  {/* 2 photos */}
+                  {/* First 2 photo slots */}
                   {source.photos.length > 0 ? (
                     source.photos.slice(0, 2).map((url, i) => (
                       <div key={i} className="relative aspect-4/3 rounded-lg overflow-hidden border border-gray-200">
@@ -131,8 +131,17 @@ export default async function LocalityTypePage({ params }: Props) {
                     ))
                   )}
 
-                  {/* Video as third tile */}
-                  {source.youtubeVideoUrl ? (
+                  {/* Third slot: 3rd photo if available, otherwise video */}
+                  {source.photos[2] ? (
+                    <div className="relative aspect-4/3 rounded-lg overflow-hidden border border-gray-200">
+                      <LightboxImage
+                        src={source.photos[2]}
+                        alt={`${source.name} — 3`}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  ) : source.youtubeVideoUrl ? (
                     <div className="aspect-4/3 rounded-lg overflow-hidden border border-gray-200">
                       <iframe
                         src={toEmbedUrl(source.youtubeVideoUrl)}
