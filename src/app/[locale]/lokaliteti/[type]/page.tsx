@@ -57,7 +57,7 @@ export default async function LocalityTypePage({ params }: Props) {
             </div>
           )}
 
-          <article>
+          <article id={`source-${source.id}`} className="scroll-mt-8">
             <h2 className="font-cinzel text-2xl font-semibold text-gray-800 mb-5">
               {source.name}
             </h2>

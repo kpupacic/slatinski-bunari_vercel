@@ -144,7 +144,7 @@ export default function WaterSourceMap({ sources }: Props) {
                   </div>
                 )}
                 <a
-                  href={`/${locale}/lokaliteti/${source.localityType}`}
+                  href={`/${locale}/lokaliteti/${source.localityType}#source-${source.id}`}
                   className="text-xs text-blue-600 hover:underline"
                 >
                   {t("learnMore")} →
