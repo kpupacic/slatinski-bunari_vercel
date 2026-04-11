@@ -60,7 +60,7 @@ type LayerType = keyof typeof TILE_LAYERS;
 
 // Slatine
 const MAP_CENTER: LatLngExpression = [43.499, 16.334];
-const MAP_ZOOM = 16;
+const MAP_ZOOM = 15;
 
 interface Props {
   sources: WaterSource[];
@@ -126,12 +126,6 @@ export default function WaterSourceMap({ sources }: Props) {
             >
               <Popup>
                 <strong className="block text-sm mb-1">{source.name}</strong>
-                <span className="block text-xs text-gray-600">
-                  {t("clarity")}: {source.clarity ?? t("na")}
-                </span>
-                <span className="block text-xs text-gray-600">
-                  {t("depth")}: {source.depth != null ? `${source.depth} ${t("depthUnit")}` : t("na")}
-                </span>
                 {source.photos[0] ? (
                   <img
                     src={source.photos[0]}

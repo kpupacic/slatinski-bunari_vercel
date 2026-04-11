@@ -68,24 +68,6 @@ export default async function LocalityTypePage({ params }: Props) {
                 <div className="flex flex-wrap gap-6 md:gap-15">
                   <div>
                     <span className="block text-xs font-medium text-gray-400 uppercase tracking-wide mb-0.5">
-                      {t("depth")}
-                    </span>
-                    <span className="text-base font-semibold text-gray-800">
-                      {source.depth != null ? `${source.depth} ${t("depthUnit")}` : t("na")}
-                    </span>
-                  </div>
-
-                  <div>
-                    <span className="block text-xs font-medium text-gray-400 uppercase tracking-wide mb-0.5">
-                      {t("clarity")}
-                    </span>
-                    <span className="text-base font-semibold text-gray-800">
-                      {source.clarity ?? t("na")}
-                    </span>
-                  </div>
-
-                  <div>
-                    <span className="block text-xs font-medium text-gray-400 uppercase tracking-wide mb-0.5">
                       {t("coordinates")}
                     </span>
                     <span className="text-base font-semibold text-gray-800">
@@ -107,56 +89,41 @@ export default async function LocalityTypePage({ params }: Props) {
                 </div>
 
                 {/* Photos + Video */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
-                  {/* First 2 photo slots */}
-                  {source.photos.length > 0 ? (
-                    source.photos.slice(0, 2).map((url, i) => (
-                      <div key={i} className="relative aspect-4/3 rounded-lg overflow-hidden border border-gray-200">
-                        <LightboxImage
-                          src={url}
-                          alt={`${source.name} — ${i + 1}`}
-                          fill
-                          className="object-cover"
-                        />
-                      </div>
-                    ))
-                  ) : (
-                    [1, 2].map((i) => (
-                      <div
-                        key={i}
-                        className="aspect-4/3 rounded-lg border-2 border-dashed border-gray-200 flex items-center justify-center bg-gray-50"
-                      >
-                        <span className="text-xs text-gray-300">{t("imagePlaceholder")} {i}</span>
-                      </div>
-                    ))
-                  )}
-
-                  {/* Third slot: 3rd photo if available, otherwise video */}
-                  {source.photos[2] ? (
-                    <div className="relative aspect-4/3 rounded-lg overflow-hidden border border-gray-200">
-                      <LightboxImage
-                        src={source.photos[2]}
-                        alt={`${source.name} — 3`}
-                        fill
-                        className="object-cover"
-                      />
+                {(() => {
+                  const media = [];
+                  source.photos.slice(0, 3).forEach((url, i) => {
+                    media.push({
+                      key: `photo-${i}`,
+                      node: (
+                        <div className="relative aspect-4/3 rounded-lg overflow-hidden border border-gray-200">
+                          <LightboxImage src={url} alt={`${source.name} — ${i + 1}`} fill className="object-cover" />
+                        </div>
+                      ),
+                    });
+                  });
+                  if (media.length < 3 && source.youtubeVideoUrl) {
+                    media.push({
+                      key: "video",
+                      node: (
+                        <div className="aspect-4/3 rounded-lg overflow-hidden border border-gray-200">
+                          <iframe
+                            src={toEmbedUrl(source.youtubeVideoUrl)}
+                            title={source.name}
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                            className="w-full h-full"
+                          />
+                        </div>
+                      ),
+                    });
+                  }
+                  if (media.length === 0) return null;
+                  return (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+                      {media.map(({ key, node }) => <div key={key}>{node}</div>)}
                     </div>
-                  ) : source.youtubeVideoUrl ? (
-                    <div className="aspect-4/3 rounded-lg overflow-hidden border border-gray-200">
-                      <iframe
-                        src={toEmbedUrl(source.youtubeVideoUrl)}
-                        title={source.name}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        className="w-full h-full"
-                      />
-                    </div>
-                  ) : (
-                    <div className="aspect-4/3 rounded-lg border-2 border-dashed border-gray-200 flex items-center justify-center bg-gray-50">
-                      <p className="text-xs text-gray-300 italic">{t("noVideo")}</p>
-                    </div>
-                  )}
-                </div>
+                  );
+                })()}
             </div>
           </article>
         </div>
