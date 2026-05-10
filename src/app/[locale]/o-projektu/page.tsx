@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const sponsors = [
   {
-    src: "/images/logos/MZO.jpg",
+    src: "/images/logos/MZO transparent.jpg",
     alt: "MZO",
     nameKey: "partnerMZO" as const,
   },
