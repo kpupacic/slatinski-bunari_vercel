@@ -43,7 +43,7 @@
     "typeDescription_gustrine": "<b>Gustrine (cisterne, šterne, čatrnje) su udubine, šupljine</b> između prirodnih stijena nepravilnog oblika koje su ljudi dodatno uredili: vapnom ili drugim veznim mješavinama zabrtvili pukotine u svrhu vododrživosti, ponekad i natkrili tj. zatvorili. Kao i kod bunara, voda se iz njih vadi.",
     "typeDescription_lokve": "<b>Lokve</b> su šire i pliće udubine, barem dijelom položenih obala, vodne površine dostupne ljudima i životinjama direktnim pristupom.",
     "typeDescription_kamenice": "<b>Kamenice</b> su male prirodne ili isklesane udubine u kamenu koje skupljaju kišnicu. Služile su kao izvor pitke vode za ljude i životinje na putovima i pašnjacima.",
-    "typeDescription_vrilo": "[vrilo tekst]"
+    "typeDescription_vrilo": "<b>Vrilo</b> je središnji seoski bunar izgrađen za potrebe zajednice."
   },
   "quiz": {
     "title": "Kviz",
@@ -71,6 +71,7 @@
     "stemText2": "STEM femme junior projekt vodi Institut za društvena istraživanja u Zagrebu, uz potporu partnera i sponzora koji omogućuju provedbu programa u lokalnim zajednicama.",
     "sponsorsTitle": "Sponzori i partneri",
     "sponsorsText": "Ovaj projekt ne bi bio moguć bez podrške naših sponzora i partnera koji prepoznaju važnost obrazovanja, očuvanja kulturne baštine i digitalne pismenosti.",
+    "partnerMZO": "Ministarstvo znanosti, obrazovanja i mladih",
     "partnerIDIZ": "Institut za društvena istraživanja",
     "partnerCity": "Grad Split",
     "partnerA1": "A1 Hrvatska"

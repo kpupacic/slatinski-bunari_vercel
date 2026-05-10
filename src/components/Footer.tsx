@@ -3,6 +3,7 @@ import Image from "next/image";
 const logos = [
   { src: "/images/logos/OS slatine transparent.png", alt: "OŠ Slatine" },
   { src: "/images/logos/STEaM logo transparent.png", alt: "STEaM" },
+  { src: "/images/logos/MZO.jpg", alt: "Ministarstvo znanosti, obrazovanja i mladih" },
   { src: "/images/logos/IDIZ logo transparent.png", alt: "Institut za društvena istraživanja" },
   { src: "/images/logos/split transparent.png", alt: "Grad Split" },
   { src: "/images/logos/A1_red_logo transparent.png", alt: "A1 Hrvatska" },

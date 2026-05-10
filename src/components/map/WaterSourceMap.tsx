@@ -8,7 +8,7 @@ import { useLocale, useTranslations } from "next-intl";
 import type { WaterSource } from "@/types";
 import MapSidebar from "./MapSidebar";
 
-// One color per locality type
+
 const LOCALITY_COLORS: Record<string, string> = {
   bunari:             "#2563eb", // blue
   skrapinski_bunari:  "#24E06A", // green

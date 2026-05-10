@@ -43,7 +43,7 @@
     "typeDescription_gustrine": "<b>Cisterns (gustrine, šterne, čatrnje) are cavities or hollows</b> between irregular natural rocks that people have adapted: sealing cracks with lime or other binding mixtures to retain water, sometimes also covering or enclosing them. As with wells, water is drawn from them.",
     "typeDescription_lokve": "<b>Ponds (lokve)</b> are wider and shallower depressions, at least partly with gently sloping banks, offering water surfaces directly accessible to people and animals.",
     "typeDescription_kamenice": "<b>Stone basins (kamenice)</b> are small natural or carved hollows in rock that collect rainwater. They served as a source of drinking water for people and animals along paths and pastures.",
-    "typeDescription_vrilo": "[water spring text]"
+    "typeDescription_vrilo": "<b>Water spring</b> here is a central well for the use of the entire community."
   },
   "quiz": {
     "title": "Quiz",
@@ -71,6 +71,7 @@
     "stemText2": "The STEM femme junior project is led by the Institute for Social Research in Zagreb, with the support of partners and sponsors who enable the program's implementation in local communities.",
     "sponsorsTitle": "Sponsors & partners",
     "sponsorsText": "This project would not be possible without the support of our sponsors and partners who recognize the importance of education, cultural heritage preservation, and digital literacy.",
+    "partnerMZO": "Ministry of Science, Education and Youth",
     "partnerIDIZ": "Institute for Social Research in Zagreb",
     "partnerCity": "City of Split",
     "partnerA1": "A1 Croatia"
